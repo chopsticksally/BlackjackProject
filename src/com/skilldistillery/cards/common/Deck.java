@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Deck {
-	private List<Card> deck;
+	public List<Card> deck;
 
 	public Deck() {
 		deck = new ArrayList<>();

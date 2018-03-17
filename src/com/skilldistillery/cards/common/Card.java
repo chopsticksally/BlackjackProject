@@ -3,28 +3,28 @@ package com.skilldistillery.cards.common;
 public class Card {
 	private Rank rank;
 	private Suit suit;
-	
-	private int getValue() {
-	return rank.getValue();
+
+	public int getValue() {
+		return rank.getValue();
 	}
-	
+
 	public Card(Rank rank, Suit suit) {
 		super();
 		this.rank = rank;
 		this.suit = suit;
 	}
-	
+
 	public Rank getRank() {
 		return rank;
 	}
-	
+
 	public Suit getSuit() {
 		return suit;
 	}
 
 	@Override
 	public String toString() {
-		return  rank + "of," + suit;
+		return rank + " of, " + suit;
 	}
 
 	@Override
@@ -51,6 +51,5 @@ public class Card {
 			return false;
 		return true;
 	}
-
 
 }

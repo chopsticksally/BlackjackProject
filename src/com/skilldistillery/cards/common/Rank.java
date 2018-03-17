@@ -12,7 +12,6 @@ public enum Rank {
 
 	public int getValue() {
 		return value;
-		// TODO Auto-generated method stub
 		
 	}
 	
