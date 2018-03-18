@@ -45,11 +45,13 @@ public class GameApp {
 
 		}
 		if (choice.equalsIgnoreCase("N")) {
-			dealerHit();
+			System.out.println("Dealer has :" + dealer.getHand());
 			System.out.println("Dealer shows: " + dealer.getHand().getHandValue());
 
 			while (dealer.getHand().getHandValue() <= 17) {
+				System.out.println("dealer hitting");
 				dealerHit();
+				System.out.println("Dealer now has :" + dealer.getHand());
 				System.out.println("Dealer shows: " + dealer.getHand().getHandValue());
 
 				if (dealer.getHand().getHandValue() > 21) {
